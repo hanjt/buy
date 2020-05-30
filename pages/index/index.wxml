@@ -1,0 +1,33 @@
+<!--index.wxml-->
+<view class="container">
+  <!-- <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+
+    </block>
+  </view> -->
+  <swiper indicator-dots='true' indicator-color='#DDDDDD' indicator-active-color='#FFFFFF' autoplay='true' circular='true'>
+   <block wx:for="{{bannerList}}" wx:for-item="banner" wx:key="id">
+    <swiper-item>
+      <image class='banner-img' mode='aspectFit' src='{{banner.url}}' bindtap='showGoodsList' ></image>
+    </swiper-item>
+   </block>
+  </swiper>
+  <view class='list'>
+    <block wx:for="{{artlist}}" wx:for-item="art" wx:key="id">
+      <view class='content'>
+        <image class='img' mode='aspectFit' src='{{art.url}}'></image>
+        <view class='right-content'>
+          <view class='title'>{{art.title}}</view>
+          <view class='name'>{{art.name}}</view>
+          <view class='order'>共{{art.order_num}}人预约</view>
+          <view class="goods-list">
+            <block wx:for="{{art.imgs}}"  wx:for-item="img" wx:key="id">
+              <image class='goods-img' mode='aspectFit' src='{{img.url}}'></image>
+            </block>
+          </view>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>
