@@ -1,0 +1,25 @@
+<view class="detail-container">
+  <image class='detail-big-image' mode='aspectFit' src='{{url}}'></image>
+  <view class="detail-top">
+    <view class="detail-trailer-title">直播预告</view>
+    <view class="detail-title">直播间标题</view>
+    <view class="detail-share">分享</view>
+  </view>
+  <view class="detail-top">
+    <image class='detail-small-image' mode='aspectFit' src='{{url}}'></image>
+    <view class="detail-living-name">露露的直播间</view>
+  </view>
+
+  <view>距离直播开始时间</view>
+  <view bindtap='subscribe'>预约直播</view>
+  <view>距离直播开始时间</view>
+  <view>
+    <view>推荐视频</view>
+    <block wx:for="{{list}}" wx:key="key">
+      <view class='detail-gridview-item'>
+        <image class='detail-gridview-item-image' mode='aspectFit' src='{{item.url}}'></image>
+        <view class="detail-gridview-item-text">{{item.content}}</view>
+      </view>
+    </block>
+  </view>
+</view>

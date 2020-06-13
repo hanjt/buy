@@ -125,5 +125,14 @@ Page({
   },
   showGoodsList: function(e) {
     console.log('showGoodsList'+e)
+    wx.navigateTo({
+      url: 'goods/index'
+    })
+  },
+  showGoodsDetail: function(e) {
+    console.log('showGoodsDetail'+e)
+    wx.navigateTo({
+      url: 'detail/index'
+    })
   }
 })

@@ -1,0 +1,16 @@
+<view class="goods-container">
+  <block wx:for="{{list}}" wx:for-item="item" wx:key="id">
+    <view class='item-content' bindtap='showGoodsDetail'>
+      <image class='item-goods-image' mode='aspectFit' src='{{item.goods_url}}'></image>
+      <view class='item-right-content'>
+        <view class='item-goods-name'>{{item.goods_name}}</view>
+        <view class="item-shop">
+          <image class='item-shop-image' mode='aspectFit' src='{{item.shop_url}}'></image>
+          <view class='item-shop-name'>{{item.shop_name}}</view>
+        </view>
+        <view class='item-price'>{{item.price}}</view>
+        <view class='item-sales'>{{item.sales}}</view>
+      </view>
+    </view>
+  </block>
+</view>

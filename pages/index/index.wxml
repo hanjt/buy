@@ -15,7 +15,7 @@
   </swiper>
   <view class='list'>
     <block wx:for="{{artlist}}" wx:for-item="art" wx:key="id">
-      <view class='content'>
+      <view class='content' bindtap='showGoodsDetail'>
         <image class='img' mode='aspectFit' src='{{art.url}}'></image>
         <view class='right-content'>
           <view class='title'>{{art.title}}</view>

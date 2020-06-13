@@ -1,0 +1,67 @@
+.detail-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.detail-big-image {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 20px;
+}
+
+.detail-top {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.detail-trailer-title {
+  color: red;
+  margin-left: 20px;
+}
+
+.detail-title {
+  color: red;
+  margin-left: 20px;
+}
+
+.detail-share {
+  color: blue;
+  margin-right: 20px;
+}
+
+.detail-small-image {
+  width: 50px;
+  height: 50px;
+  margin-left: 20px;
+}
+
+.detail-living-name {
+  color: red;
+  margin-left: 20px;
+  height: 100%;
+  text-align: center;
+}
+
+.gridview{
+  margin: 5rpx 10rpx 5rpx 10rpx;
+}
+
+.detail-gridview-item{
+  margin: 1%;
+  width: 48%;
+  height: 300rpx;
+  float: left;
+  background: rebeccapurple
+}
+
+.detail-gridview-item-image {
+  width: 100%;
+  height: 70%;
+}
+
+.detail-gridview-item-text {
+  text-align: center;
+  width: 100%;
+}
