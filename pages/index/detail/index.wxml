@@ -1,11 +1,11 @@
 <view class="detail-container">
   <image class='detail-big-image' mode='aspectFit' src='{{url}}'></image>
-  <view class="detail-top">
+  <view class="detail-top-container">
     <view class="detail-trailer-title">直播预告</view>
     <view class="detail-title">直播间标题</view>
     <view class="detail-share">分享</view>
   </view>
-  <view class="detail-top">
+  <view class="detail-top-container">
     <image class='detail-small-image' mode='aspectFit' src='{{url}}'></image>
     <view class="detail-living-name">露露的直播间</view>
   </view>
